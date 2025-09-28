@@ -45,4 +45,12 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    public function discounts()
+    {
+        return $this->belongsToMany(\UserDiscounts\Models\Discount::class, 'user_discounts')
+            ->using(\UserDiscounts\Models\UserDiscount::class)
+            ->withPivot('usage_count','usage_limit')
+            ->withTimestamps();
+    }
+
 }

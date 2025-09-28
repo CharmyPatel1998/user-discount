@@ -1,0 +1,20 @@
+{
+    "name": "charm/user-discounts",
+    "description": "User-level discounts package for Laravel",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "UserDiscounts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UserDiscounts\\UserDiscountsServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.1"
+    }
+}

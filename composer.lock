@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c514d8f7b9fc5970bdd94287905ef584",
+    "content-hash": "0b267cc0cb07d94eb29cb78684158e2f",
     "packages": [
         {
             "name": "brick/math",
@@ -6099,6 +6099,35 @@
     ],
     "packages-dev": [
         {
+            "name": "charm/user-discounts",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/UserDiscounts",
+                "reference": "e6ae26d0f8e6838f357190bc33c23fa0e76038d2"
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "UserDiscounts\\UserDiscountsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "UserDiscounts\\": "src/"
+                }
+            },
+            "description": "User-level discounts package for Laravel",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "fakerphp/faker",
             "version": "v1.24.1",
             "source": {
@@ -8462,7 +8491,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "charm/user-discounts": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
