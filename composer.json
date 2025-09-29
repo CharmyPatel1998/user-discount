@@ -1,6 +1,6 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "charm/user-discounts",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
@@ -28,10 +28,10 @@
             "UserDiscounts\\": "packages/UserDiscounts/src/"
         }
     },
-    "repositories": [
+   "repositories": [
         {
-            "type": "path",
-            "url": "packages/UserDiscounts"
+            "type": "vcs",
+            "url": "https://github.com/CharmyPatel1998/user-discounts.git"
         }
     ],
     "autoload-dev": {
