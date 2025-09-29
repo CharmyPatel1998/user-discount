@@ -1,5 +1,5 @@
 {
-    "name": "charm/user-discounts",
+    "name": "charmypatel/user-discounts",
     "description": "User-level discounts package for Laravel",
     "type": "library",
     "autoload": {
